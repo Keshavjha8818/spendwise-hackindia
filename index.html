@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>SpendWise — Student money, made clear</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="SpendWise home"><span class="brand-mark">S</span><span>spendwise</span></a>
+      <p class="side-label">WORKSPACE</p>
+      <nav aria-label="Main navigation">
+        <button class="nav-link active" data-view="overview"><span>◫</span> Overview</button>
+        <button class="nav-link" data-view="transactions"><span>↕</span> Transactions</button>
+        <button class="nav-link" data-view="insights"><span>▥</span> Insights</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span class="help-icon">✦</span><strong>Small steps add up.</strong><p>Keep an eye on your spending and make your next move count.</p></div>
+        <button class="profile-button" id="profileButton"><span class="avatar">KJ</span><span><strong>Keshav Jha</strong><small>Student account</small></span><span class="dots">···</span></button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div><p class="eyebrow" id="dateLabel">YOUR MONEY, IN FOCUS</p><h1 id="pageTitle">Good morning, Keshav <span>✦</span></h1></div>
+        <div class="top-actions"><button class="icon-button" id="themeButton" aria-label="Toggle appearance">◐</button><button class="primary-button" id="quickAdd">＋ Add expense</button></div>
+      </header>
+
+      <section class="view active" id="overviewView" aria-labelledby="pageTitle">
+        <div class="welcome-strip"><div><span class="strip-kicker">NOVEMBER SNAPSHOT</span><h2>Make your money<br>work <em>smarter.</em></h2><p>A clearer view of where your student budget goes.</p></div><div class="strip-art" aria-hidden="true"><div class="art-circle"></div><div class="art-card"><span>THIS MONTH</span><strong>₹ 8,420</strong><small>spent so far ↗</small></div><div class="art-spark">✳</div></div></div>
+        <div class="section-heading"><div><p class="eyebrow">AT A GLANCE</p><h2>Your overview</h2></div><span class="muted">November 2026</span></div>
+        <div class="stats-grid">
+          <article class="stat-card"><div class="stat-top"><span>Monthly budget</span><span class="stat-icon purple">◎</span></div><strong id="budgetValue">₹ 12,000</strong><small><span class="positive">Set for this month</span></small></article>
+          <article class="stat-card"><div class="stat-top"><span>Total spent</span><span class="stat-icon orange">↗</span></div><strong id="spentValue">₹ 8,420</strong><small>Across <b id="expenseCount">6</b> transactions</small></article>
+          <article class="stat-card"><div class="stat-top"><span>Left to spend</span><span class="stat-icon green">⌁</span></div><strong id="leftValue">₹ 3,580</strong><small><span class="positive" id="budgetStatus">29.8% of budget left</span></small></article>
+        </div>
+        <div class="content-grid">
+          <article class="panel budget-panel"><div class="panel-heading"><div><p class="eyebrow">BUDGET TRACKER</p><h3>Your monthly limit</h3></div><button class="text-button" id="editBudget">Edit budget ↗</button></div><div class="budget-number"><strong id="budgetSpent">₹ 8,420</strong><span>of ₹ 12,000</span></div><div class="progress-track"><div class="progress-fill" id="budgetProgress" style="width:70.2%"></div></div><div class="progress-labels"><span>₹0 spent</span><span>₹12,000 limit</span></div><div class="budget-note"><span class="note-dot"></span><span id="budgetMessage">You're on track. You have room for the rest of the month.</span></div></article>
+          <article class="panel category-panel"><div class="panel-heading"><div><p class="eyebrow">SPENDING MIX</p><h3>Top categories</h3></div><button class="text-button" data-go="insights">See insights ↗</button></div><div id="categoryBars" class="category-bars"></div></article>
+        </div>
+        <article class="panel recent-panel"><div class="panel-heading"><div><p class="eyebrow">THE LATEST</p><h3>Recent transactions</h3></div><button class="text-button" data-go="transactions">View all ↗</button></div><div id="recentList"></div></article>
+      </section>
+
+      <section class="view" id="transactionsView">
+        <div class="section-heading"><div><p class="eyebrow">YOUR ACTIVITY</p><h2>Transactions</h2><p class="muted">Every little expense, in one place.</p></div><button class="primary-button" id="transactionAdd">＋ Add expense</button></div>
+        <div class="panel"><div class="filter-row"><label class="search-box">⌕ <input id="searchInput" type="search" placeholder="Search transactions" aria-label="Search transactions"></label><select id="categoryFilter" aria-label="Filter by category"><option value="all">All categories</option><option>Food</option><option>Travel</option><option>Shopping</option><option>Study</option><option>Other</option></select></div><div id="transactionList"></div></div>
+      </section>
+
+      <section class="view" id="insightsView">
+        <div class="section-heading"><div><p class="eyebrow">THE BIGGER PICTURE</p><h2>Spending insights</h2><p class="muted">Patterns that help you make better calls.</p></div><span class="pill">November 2026</span></div>
+        <div class="insight-grid"><article class="panel insight-total"><p class="eyebrow">TOTAL SPENDING</p><strong id="insightTotal">₹ 8,420</strong><p class="muted">Your recorded expenses this month.</p><div class="insight-callout">✦ <span id="insightTip">Your budget is looking healthy. Keep tracking to stay in control.</span></div></article><article class="panel"><p class="eyebrow">CATEGORY BREAKDOWN</p><h3>Where it goes</h3><div id="insightCategories" class="category-bars"></div></article></div>
+        <article class="panel"><p class="eyebrow">A QUICK CHECK-IN</p><h3>Three habits worth keeping</h3><div class="habit-list"><div><span class="habit-number">01</span><p><strong>Log it while it's fresh.</strong><small>Adding expenses on the same day keeps your picture accurate.</small></p></div><div><span class="habit-number">02</span><p><strong>Give every rupee a category.</strong><small>You'll spot patterns faster when your records are consistent.</small></p></div><div><span class="habit-number">03</span><p><strong>Review before the month ends.</strong><small>A quick check-in can help you adjust before you overspend.</small></p></div></div></article>
+      </section>
+      <footer>SpendWise <span>·</span> A student-first budget companion <span class="footer-right">Made to make money feel simpler.</span></footer>
+    </main>
+  </div>
+
+  <dialog id="expenseDialog" class="modal">
+    <form id="expenseForm" method="dialog">
+      <div class="modal-head"><div><p class="eyebrow">NEW TRANSACTION</p><h2>Add an expense</h2></div><button type="button" class="close-button" id="closeDialog" aria-label="Close">×</button></div>
+      <label class="field-label" for="expenseTitle">What did you spend on?</label><input id="expenseTitle" name="title" required maxlength="50" placeholder="e.g. Lunch with friends">
+      <div class="form-row"><div><label class="field-label" for="expenseAmount">Amount (₹)</label><input id="expenseAmount" name="amount" type="number" min="1" max="1000000" step="1" required placeholder="250"></div><div><label class="field-label" for="expenseCategory">Category</label><select id="expenseCategory" name="category"><option>Food</option><option>Travel</option><option>Shopping</option><option>Study</option><option>Other</option></select></div></div>
+      <label class="field-label" for="expenseDate">Date</label><input id="expenseDate" name="date" type="date" required>
+      <p class="form-error" id="formError" role="alert"></p>
+      <button class="primary-button submit-button" type="submit">Save expense <span>→</span></button>
+    </form>
+  </dialog>
+
+  <dialog id="budgetDialog" class="modal">
+    <form id="budgetForm" method="dialog"><div class="modal-head"><div><p class="eyebrow">MONTHLY PLAN</p><h2>Set your budget</h2></div><button type="button" class="close-button" id="closeBudget" aria-label="Close">×</button></div><label class="field-label" for="budgetInput">Monthly budget (₹)</label><input id="budgetInput" type="number" min="1" max="10000000" required><p class="form-error" id="budgetError" role="alert"></p><button class="primary-button submit-button" type="submit">Update budget →</button></form>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
