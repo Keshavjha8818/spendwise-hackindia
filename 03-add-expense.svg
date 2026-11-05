@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 1440 1000">
+<style>text{font-family:Inter,Arial,sans-serif}</style>
+<rect width="1440" height="1000" fill="#F6F8F5"/><rect x="0" y="0" width="1440" height="1000" fill="#15251D" opacity=".38"/>
+<rect x="470" y="115" width="500" height="760" rx="18" fill="#FFFFFF"/>
+<text x="515" y="175" font-size="11" font-weight="700" letter-spacing="2" fill="#9AA39C">NEW TRANSACTION</text><text x="515" y="215" font-size="27" font-weight="800" fill="#18251F">Add an expense</text>
+<text x="515" y="275" font-size="13" font-weight="700" fill="#18251F">What did you spend on?</text><rect x="515" y="290" width="410" height="54" rx="8" fill="#FFFFFF" stroke="#E8ECE8"/><text x="535" y="323" font-size="14" fill="#9AA39C">e.g. Lunch with friends</text>
+<text x="515" y="390" font-size="13" font-weight="700" fill="#18251F">Amount (₹)</text><rect x="515" y="405" width="195" height="54" rx="8" fill="#FFFFFF" stroke="#E8ECE8"/><text x="535" y="438" font-size="14" fill="#9AA39C">250</text>
+<text x="730" y="390" font-size="13" font-weight="700" fill="#18251F">Category</text><rect x="730" y="405" width="195" height="54" rx="8" fill="#FFFFFF" stroke="#E8ECE8"/><text x="750" y="438" font-size="14" fill="#18251F">Food   ▾</text>
+<text x="515" y="505" font-size="13" font-weight="700" fill="#18251F">Date</text><rect x="515" y="520" width="410" height="54" rx="8" fill="#FFFFFF" stroke="#E8ECE8"/><text x="535" y="553" font-size="14" fill="#18251F">05 Nov 2026</text>
+<rect x="515" y="600" width="410" height="48" rx="8" fill="#FCEFED"/><text x="535" y="629" font-size="12" fill="#B33D36">Please enter a valid amount greater than ₹0.</text>
+<rect x="515" y="685" width="410" height="54" rx="8" fill="#287653"/><text x="720" y="719" text-anchor="middle" font-size="15" font-weight="700" fill="#FFFFFF">Save expense  →</text>
+</svg>

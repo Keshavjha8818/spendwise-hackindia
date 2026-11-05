@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 1440 1000">
+<style>text{font-family:Inter,Arial,sans-serif}</style>
+<rect width="1440" height="1000" fill="#F6F8F5"/><rect width="250" height="1000" fill="#FFFFFF"/>
+<rect x="28" y="28" width="38" height="38" rx="12" fill="#287653"/><text x="47" y="54" text-anchor="middle" font-size="22" font-weight="800" fill="#FFFFFF">S</text><text x="78" y="54" font-size="22" font-weight="800" fill="#18251F">spendwise</text>
+<text x="300" y="55" font-size="11" font-weight="700" letter-spacing="2" fill="#9AA39C">THE BIGGER PICTURE</text><text x="300" y="100" font-size="32" font-weight="800" fill="#18251F">Spending insights</text><text x="300" y="130" font-size="14" fill="#78827B">Patterns that help you make better calls.</text>
+<rect x="300" y="180" width="430" height="270" rx="14" fill="#FFFFFF" stroke="#E8ECE8"/><text x="335" y="225" font-size="11" font-weight="700" letter-spacing="2" fill="#9AA39C">TOTAL SPENDING</text><text x="335" y="290" font-size="40" font-weight="800" fill="#18251F">₹ 8,420</text><text x="335" y="325" font-size="13" fill="#78827B">Your recorded expenses this month.</text><rect x="335" y="365" width="360" height="55" rx="9" fill="#EAF4ED"/><text x="355" y="397" font-size="12" fill="#174D37">✦ You have ₹3,580 left in your budget.</text>
+<rect x="755" y="180" width="615" height="270" rx="14" fill="#FFFFFF" stroke="#E8ECE8"/><text x="790" y="225" font-size="11" font-weight="700" letter-spacing="2" fill="#9AA39C">CATEGORY BREAKDOWN</text><text x="790" y="260" font-size="19" font-weight="700" fill="#18251F">Where it goes</text>
+</svg>

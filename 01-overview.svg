@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1000" viewBox="0 0 1440 1000">
+<style>text{font-family:Inter,Arial,sans-serif}</style>
+<rect width="1440" height="1000" fill="#F6F8F5"/>
+<rect x="0" y="0" width="250" height="1000" fill="#FFFFFF"/>
+<rect x="28" y="28" width="38" height="38" rx="12" fill="#287653"/><text x="47" y="54" text-anchor="middle" font-size="22" font-weight="800" fill="#FFFFFF">S</text>
+<text x="78" y="54" font-size="22" font-weight="800" fill="#18251F">spendwise</text>
+<text x="32" y="125" font-size="11" font-weight="700" letter-spacing="2" fill="#9AA39C">WORKSPACE</text>
+<rect x="18" y="148" width="214" height="48" rx="10" fill="#EAF4ED"/><text x="48" y="178" font-size="15" font-weight="700" fill="#174D37">▦  Overview</text>
+<text x="48" y="236" font-size="15" fill="#78827B">↕  Transactions</text><text x="48" y="286" font-size="15" fill="#78827B">▥  Insights</text>
+<rect x="24" y="812" width="202" height="110" rx="12" fill="#F3F7F2"/><text x="42" y="844" font-size="14" font-weight="700" fill="#18251F">✦ Small steps add up.</text><text x="42" y="870" font-size="12" fill="#78827B">Keep an eye on your spending</text><text x="42" y="890" font-size="12" fill="#78827B">and make your next move count.</text>
+<text x="300" y="55" font-size="11" font-weight="700" letter-spacing="2" fill="#9AA39C">YOUR MONEY, IN FOCUS</text><text x="300" y="100" font-size="32" font-weight="800" fill="#18251F">Good morning, Keshav ✦</text>
+<rect x="300" y="135" width="1090" height="220" rx="16" fill="#EAF2E9"/>
+<text x="340" y="180" font-size="11" font-weight="700" letter-spacing="2" fill="#287653">NOVEMBER SNAPSHOT</text><text x="340" y="235" font-size="40" font-weight="800" fill="#18251F">Make your money</text><text x="340" y="280" font-size="40" font-weight="800" fill="#287653">work smarter.</text><text x="340" y="317" font-size="15" fill="#65756A">A clearer view of where your student budget goes.</text>
+<circle cx="1210" cy="245" r="100" fill="none" stroke="#B8CDBB" stroke-width="2"/><circle cx="1210" cy="245" r="72" fill="none" stroke="#C5D6C7" stroke-width="2"/>
+<rect x="1100" y="195" width="190" height="108" rx="12" fill="#FFFFFF"/><text x="1120" y="222" font-size="10" letter-spacing="1" fill="#8A958D">THIS MONTH</text><text x="1120" y="260" font-size="28" font-weight="800" fill="#18251F">₹ 8,420</text><text x="1120" y="283" font-size="11" fill="#287653">spent so far ↗</text>
+<text x="300" y="405" font-size="11" font-weight="700" letter-spacing="2" fill="#9AA39C">AT A GLANCE</text><text x="300" y="438" font-size="23" font-weight="800" fill="#18251F">Your overview</text>
+</svg>
